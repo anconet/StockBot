@@ -1,1 +1,3 @@
 # StockBot
+
+A repo for Dad and James to write code. Yuh... 
