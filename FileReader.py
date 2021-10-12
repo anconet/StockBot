@@ -12,8 +12,17 @@ def exampleWritingAndReadingAFile():
 
     testFileLine = testFile.readline()
     #print(testFileLine)
+
+    stockValuesArray = []
+
     while testFileLine != '':
+        stockValuesArray.append(testFileLine)
         print(testFileLine,end='')
         testFileLine = testFile.readline()
+
+    print("-----------")
+
+    for x in stockValuesArray:
+        print(x)
 
 exampleWritingAndReadingAFile()
