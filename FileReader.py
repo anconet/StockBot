@@ -25,4 +25,15 @@ def exampleWritingAndReadingAFile():
     for x in stockValuesArray:
         print(x)
 
-exampleWritingAndReadingAFile()
+def fileRead(fileName):
+    stockPriceFile = open(fileName)
+    stockPriceFileLine = stockPriceFile.readline()
+    stockPriceArray = []
+
+    while stockPriceFileLine != '':
+        stockPriceArray.append(stockPriceFileLine.replace("\n",""))
+        stockPriceFileLine = stockPriceFile.readline()
+
+    return stockPriceArray
+
+#exampleWritingAndReadingAFile()
